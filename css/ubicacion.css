@@ -1,0 +1,26 @@
+html, body{
+    overflow: hidden;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+}
+
+.texto{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navegador{
+    height: 70px;
+    margin-left: 5px;
+}
+
+.fixed-button {
+    position: fixed;
+    top: 20px;
+    right: 16px;
+}

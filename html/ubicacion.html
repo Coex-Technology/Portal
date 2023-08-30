@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ubicación de COEX </title>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/bulma.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css_temas/index.css">
+    <link rel="stylesheet" href="../css/ubicacion.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar is-light" role="navigation" aria-label="main navigation" class="hero is-primary">
+
+            <div class="navbar-brand navegador">
+                <a class="navbar-item " href="../index.html">
+                    <img src="../img/logo.jpg" class="navegador" width="40px" height="40px" class="mr-4">
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-item is-light" href="../html/valores.html"> Valores </a>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-item" href="../html/informacion.html"> Información </a>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-item" href="../html/ubicacion.html"> Ubicación </a>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link"> Contactos </a>
+
+                        <div class="navbar-dropdown">
+                            <a href="https://www.whatsapp.com" class="navbar-item">
+                                <img src="../img/whatsapp.jpg" alt="WhatsApp" width="20px" height="20px">
+                                <span style="margin-left: 10px;"> WhatsApp </span> </a>
+
+                            <a href="https://www.facebook.com" class="navbar-item">
+                                <img src="../img/facebook.jpg" alt="Facebook" width="20px" height="20px">
+                                <span style="margin-left: 10px;"> Facebook </span> </a>
+
+                            <a href="https://www.instagram.com" class="navbar-item">
+                                <img src="../img/instagram.jpg" alt="Instagram" width="20px" height="20px">
+                                <span style="margin-left: 10px;"> Instagram </span> </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <nav class="boton_temas">
+                <div class="enlaces">
+                    <button class="switch" id="switch">
+                        <span><i class="fas fa-moon"></i></span>
+                        <span><i class="fas fa-sun"></i></span>
+                    </button>
+                </div>
+            </nav>
+
+        </nav>
+
+        <script src="../js/temas.js"></script>
+
+    </header>
+
+    <div class="content-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d412.9829644911248!2d-56.217009277274606!3d-34.0986315841349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a10318d088a5e5%3A0xe34bc87fdba66f90!2sFlorida%20Cowork!5e0!3m2!1ses-419!2suy!4v1687531426181!5m2!1ses-419!2suy"
+            width="1400" height="580" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+</body>
+
+</html>
