@@ -5,22 +5,39 @@ html, body{
 .content-container {
     display: flex;
     justify-content: center;
-    margin-top: 85px;
-}
-
-.texto{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.navegador{
-    height: 70px;
-    margin-left: 5px;
+    margin-top: 5vh;
 }
 
 .fixed-button {
     position: fixed;
     top: 20px;
     right: 16px;
+}
+
+/* Mantener el header estatico */
+
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.sticky-header h1 {
+    margin: 0;
+}
+
+.sticky-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sticky-header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.sticky-header nav ul li:last-child {
+    margin-right: 0;
 }

@@ -35,27 +35,39 @@
     box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
   }
   
-  body.dark .boton_temas {
+  body.dark nav {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
   }
-  body.dark .boton_temas a {
-    color: #C8C8C8;
-  }
-  body.dark .boton_temas a:hover {
+  body.dark nav a {
     color: #FEFEFE;
   }
-  .boton_temas .logotipo {
+  body.dark p {
+    color: #FEFEFE;
+  } 
+  body.dark h1 {
+    color: #d4d1d1;
+  }
+  body.dark .services-container{
+    background-color: #b9b7b7;
+    box-shadow: 0 0 45px #9ea1a1;
+  }
+  body.dark .has-text-white, body.dark li{
+    color: #000 !important;
+  }
+
+
+  .nav .logotipo {
     font-weight: 700;
     font-family: "Roboto", sans-serif;
   }
-  .boton_temas .enlaces {
+  .nav .enlaces {
     display: flex;
     align-items: center;
   }
-  .boton_temas .enlaces a {
-    margin-right: 40px;
+  body.dark nav div a {
+    color: #707070 !important;
   }
-  .boton_temas .enlaces a:hover {
+  .nav .enlaces a:hover {
     color: #707070;
   }
   
@@ -148,3 +160,15 @@
     border-radius: 5px;
     transition: 0.3s ease all;
   }
+  .grid .card .botones .boton.primario {
+    background: #3E60E9;
+  }
+  .grid .card .botones .boton.primario:hover {
+    background: #254BE6;
+  }
+  .grid .card .botones .boton.secundario {
+    background: #C8C8C8;
+  }
+  .grid .card .botones .boton.secundario:hover {
+    background: #ACABAB;
+  }/*# sourceMappingURL=estilos.css.map */

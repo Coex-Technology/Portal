@@ -88,3 +88,70 @@ header{
 .bajar_caja{
     padding-bottom: 90px;
 }
+
+/* Centrar texto */
+
+
+p, b {
+    margin-top: 1vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+.t1 {
+    margin-top: 20vh;
+}
+
+.t2 {
+    margin-top: 28vh;
+}
+
+.t3 {
+    margin-top: 26vh;
+}
+
+.t4 {
+    margin-top: 20vh;
+}
+
+.t5 {
+    margin-top: 39vh;
+}
+
+.t6 {
+    margin-top: 20vh;
+}
+
+/* Mantener el header estatico */
+
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.sticky-header h1 {
+    margin: 0;
+}
+
+.sticky-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sticky-header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.sticky-header nav ul li:last-child {
+    margin-right: 0;
+}

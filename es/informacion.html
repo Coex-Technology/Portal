@@ -16,67 +16,77 @@
 
 <body>
 
-  <header>
+  <header class="sticky-header">
 
     <nav class="navbar is-light" role="navigation" aria-label="main navigation" class="hero is-primary">
 
-      <div class="navbar-brand navegador">
-        <a class="navbar-item " href="../index.html">
-          <img src="../img/logo.jpg" class="navegador" width="40px" height="40px" class="mr-4">
-        </a>
-      </div>
+        <div class="navbar-brand navegador">
+            <a class="navbar-item " href="../index.html">
+                <img src="../img/logo.jpg" class="navegador" width="40px" height="40px" class="mr-4">
+            </a>
+        </div>
 
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
+        <div class="navbar-brand navegador">
+            <a class="navbar-item is-light" href="../index.html"> Inicio </a>
+        </div>
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-item is-light" href="../html/valores.html"> Valores </a>
-          </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-item" href="../html/informacion.html"> Información </a>
-          </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-item is-light" href="valores.html"> Valores </a>
+                </div>
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-item" href="../html/ubicacion.html"> Ubicación </a>
-          </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-item" href="informacion.html"> Información </a>
+                </div>
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link"> Contactos </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-item" href="ubicacion.html"> Ubicación </a>
+                </div>
 
-            <div class="navbar-dropdown">
-              <a href="https://www.whatsapp.com" class="navbar-item">
-                <img src="../img/whatsapp.jpg" alt="WhatsApp" width="20px" height="20px">
-                <span style="margin-left: 10px;"> WhatsApp </span> </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link"> Contactos </a>
 
-              <a href="https://www.facebook.com" class="navbar-item">
-                <img src="../img/facebook.jpg" alt="Facebook" width="20px" height="20px">
-                <span style="margin-left: 10px;"> Facebook </span> </a>
+                    <div class="navbar-dropdown">
+                        <a href="https://www.whatsapp.com" class="navbar-item">
+                            <img src="../img/whatsapp.jpg" alt="WhatsApp" width="20px" height="20px">
+                            <span style="margin-left: 10px;"> WhatsApp </span> </a>
 
-              <a href="https://www.instagram.com" class="navbar-item">
-                <img src="../img/instagram.jpg" alt="Instagram" width="20px" height="20px">
-                <span style="margin-left: 10px;"> Instagram </span> </a>
+                        <a href="https://www.facebook.com" class="navbar-item">
+                            <img src="../img/facebook.jpg" alt="Facebook" width="20px" height="20px">
+                            <span style="margin-left: 10px;"> Facebook </span> </a>
 
+                        <a href="https://www.instagram.com" class="navbar-item">
+                            <img src="../img/instagram.jpg" alt="Instagram" width="20px" height="20px">
+                            <span style="margin-left: 10px;"> Instagram </span> </a>
+
+                    </div>
+                </div>
             </div>
-          </div>
+
         </div>
 
-      </div>
-
-      <nav class="boton_temas">
-        <div class="enlaces">
-          <button class="switch" id="switch">
-            <span><i class="fas fa-moon"></i></span>
-            <span><i class="fas fa-sun"></i></span>
-          </button>
+        <div class="navbar-brand navegador">
+            <a class="navbar-item is-light" href="../en/information.html"> Español </a>
         </div>
-      </nav>
+
+        <nav class="boton_temas">
+            
+
+            <div class="enlaces">
+                <button class="switch" id="switch">
+                    <span><i class="fas fa-moon"></i></span>
+                    <span><i class="fas fa-sun"></i></span>
+                </button>
+            </div>
+        </nav>
 
     </nav>
 
     <script src="../js/temas.js"></script>
 
-  </header>
+</header>
 
   <section class="section">
     <div class="container">
@@ -84,7 +94,7 @@
 
         <div class="column is-half">
           <div class="service-column mt-5">
-            <p id="titulo"> <b> Desarrollo de aplicaciones móviles </b> </p> <br>
+            <p class="titulo t1"> <b> Desarrollo de aplicaciones móviles </b> </p> <br>
             <p>Lleva tu negocio al siguiente nivel con nuestra experiencia en el desarrollo de aplicaciones móviles
               personalizadas. Llega directamente a tus clientes a través de sus teléfonos y tabletas, brindándoles una
               experiencia única y conveniente en la palma de su mano.</p>
@@ -103,7 +113,7 @@
         </div>
         <div class="column is-half">
           <div class="service-column mt-5">
-            <p id="titulo"> <b> Consultoría en tecnología </b> </p> <br>
+            <p class="titulo t2"> <b> Consultoría en tecnología </b> </p> <br>
             <p>Obtén asesoramiento especializado en tecnología para potenciar tu negocio. Nuestro equipo de expertos te
               guiará en la implementación de soluciones tecnológicas estratégicas que te ayudarán a alcanzar tus metas y
               destacarte en el mercado.</p>
@@ -112,7 +122,7 @@
 
         <div class="column is-half">
           <div class="service-column mt-5">
-            <p id="titulo"> <b> Desarrollo de software para la nube </b> </p> <br>
+            <p class="titulo t3"> <b> Desarrollo de software para la nube </b> </p> <br>
             <p>Descubre las ventajas de tener tu software en la nube. Accede a tus aplicaciones y datos desde cualquier
               lugar, en cualquier momento. Simplifica tus operaciones, reduce costos y aprovecha la escalabilidad y
               flexibilidad que ofrece la nube.</p>
@@ -131,7 +141,7 @@
         </div>
         <div class="column is-half">
           <div class="service-column mt-5">
-            <p id="titulo"> <b> Desarrollo de software empresarial </b> </p> <br>
+            <p class="titulo t4"> <b> Desarrollo de software empresarial </b> </p> <br>
             <p> Impulsa la eficiencia de tu empresa con software a medida. Creamos soluciones personalizadas que se
               adaptan a tus necesidades específicas, automatizando tareas y optimizando tus procesos para que puedas
               centrarte en hacer crecer tu negocio.</p>
@@ -140,7 +150,7 @@
 
         <div class="column is-half">
           <div class="service-column mt-5">
-            <p id="titulo"> <b> Mantenimiento y soporte del software </b> </p> <br>
+            <p class="titulo t5"> <b> Mantenimiento y soporte del software </b> </p> <br>
             <p>Mantén tus sistemas en perfecto estado con nuestro servicio de mantenimiento y soporte. Nos encargamos de
               las actualizaciones, solucionamos cualquier problema técnico y te brindamos la tranquilidad de saber que
               tus aplicaciones siempre funcionarán sin problemas.</p>
@@ -159,7 +169,7 @@
         </div>
         <div class="column is-half">
           <div class="service-column mt-5">
-            <p id="titulo"> <b> Integración de sistemas </b> </p> <br>
+            <p class="titulo t6"> <b> Integración de sistemas </b> </p> <br>
             <p>Rompe barreras y mejora la comunicación interna en tu empresa. Conectamos tus sistemas y aplicaciones
               para que trabajen juntos de manera eficiente, mejorando la colaboración entre equipos y optimizando tus
               flujos de trabajo.</p>
