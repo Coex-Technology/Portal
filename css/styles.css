@@ -22,14 +22,18 @@ body {
 }
 /* Resto de tus estilos CSS existentes */
 
-.content {
+.content-prin {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     position: relative;
-    text-align: center; /* Alinea el texto al centro horizontalmente */
+    z-index: 2;
+    text-align: center;
+    width: 500px; /* Mantiene un ancho fijo de 500px */
+    margin: 0 auto; /* Centra horizontalmente con margen automático */
 }
 
 h1 {
