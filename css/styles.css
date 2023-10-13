@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI';
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh;
+}
+
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Ajusta el tamaño del fondo para que se adapte al tamaño de la pantalla */
+    background-size: cover;
+}
+/* Resto de tus estilos CSS existentes */
+
+.content-prin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 500px; /* Mantiene un ancho fijo de 500px */
+    margin: 0 auto; /* Centra horizontalmente con margen automático */
+}
+
+h1 {
+    font-size: 24px;
+    color: white;
+    position: relative; /* Cambia a "relative" en lugar de "absolute" */
+    z-index: 2;
+    margin-bottom: 20px; /* Cambia el margen inferior según sea necesario */
+}
+
+.button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px; /* Agrega margen superior al botón para separarlo del texto */
+}

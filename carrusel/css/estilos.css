@@ -20,7 +20,7 @@ body {
 
 .subtitulo {
     margin: 0;
-    color: #000;
+    color: #fff;
     display: inline;
     font-size: 4vh;
     text-transform: uppercase;
@@ -28,7 +28,7 @@ body {
 }
 
 .subtitulo_imagen { 
-    color: #000000;
+    color: #fff;
     margin: 7px 0;
     font-size: 4vh;
     font-weight: 600;
@@ -95,4 +95,22 @@ p{
 
 .contenedor_logo {
     position: relative;
+}
+
+/* ------------------------ */
+/*     Carrusel - Boton     */
+/* ------------------------ */
+
+.content-prin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 500px; /* Mantiene un ancho fijo de 500px */
+    margin: 0 auto; /* Centra horizontalmente con margen automático */
 }
