@@ -1,98 +1,105 @@
-<link rel="stylesheet" href="./css/styles.css">
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <style>
-        body {
-            background-color: #121212;
-            color: #fff;
-            font-family: Arial, sans-serif;
-        }
-        .hero {
-            background-image: url('https://via.placeholder.com/1920x1080');
-            background-size: cover;
-            background-position: center;
-            height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 4rem;
-            font-weight: 700;
-        }
-        .content {
-            padding: 3rem;
-        }
-        .section {
-            background-color: #2a2a2a;
-            padding: 3rem;
-            color: #fff;
-        }
-        .container {
-            max-width: 1200px;
-        }
-        .cta {
-            background-color: #007BFF;
-            padding: 2rem;
-            text-align: center;
-        }
-        .cta h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #fff; /* Cambio de color a blanco */
-        }
-        .card {
-            background-color: #333;
-            color: #fff;
-            border-radius: 5px;
-            padding: 2rem;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .gallery-item {
-            background-image: url('https://via.placeholder.com/300x200');
-            background-size: cover;
-            background-position: center;
-            height: 200px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .gallery-item:hover {
-            transform: scale(1.1);
-        }
-        .dark-theme {
-            background-color: #121212;
-            color: #fff;
-        }
-    </style>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="./css/index_prin.css">
+    <link rel="stylesheet" href="./css_temas/index.css">
 </head>
 <body>
+    <header class="sticky-header">
+
+        <nav class="navbar is-light" role="navigation" aria-label="main navigation" class="hero is-primary">
+
+            <div class="navbar-brand navegador">
+                <a class="navbar-item " href="./index.html">
+                    <img src="./img/logo.jpg" class="navegador" width="40px" height="40px" class="mr-4">
+                </a>
+            </div>
+            <div class="navbar-brand navegador">
+                <a class="navbar-item is-light" href="#"> Inicio </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-item is-light" href="./es/valores.html"> Valores </a>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-item" href="./es/informacion.html"> Información </a>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-item" href="./es/ubicacion.html"> Ubicación </a>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link"> Contactos </a>
+
+                        <div class="navbar-dropdown">
+                            <a href="https://www.whatsapp.com" class="navbar-item">
+                                <img src="./img/whatsapp.jpg" alt="WhatsApp" width="20px" height="20px">
+                                <span style="margin-left: 10px;"> WhatsApp </span> </a>
+
+                            <a href="https://www.facebook.com" class="navbar-item">
+                                <img src="./img/facebook.jpg" alt="Facebook" width="20px" height="20px">
+                                <span style="margin-left: 10px;"> Facebook </span> </a>
+
+                            <a href="https://www.instagram.com" class="navbar-item">
+                                <img src="./img/instagram.jpg" alt="Instagram" width="20px" height="20px">
+                                <span style="margin-left: 10px;"> Instagram </span> </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="navbar-brand navegador">
+                <a class="navbar-item is-light" href="./en/index.html"> English </a>
+            </div>
+
+            <nav class="boton_temas">
+                
+
+                <div class="enlaces">
+                    <button class="switch" id="switch">
+                        <span><i class="fas fa-moon"></i></span>
+                        <span><i class="fas fa-sun"></i></span>
+                    </button>
+                </div>
+            </nav>
+
+        </nav>
+
+        <script src="./js/temas.js"></script>
+
+    </header>
     <section class="hero is-dark is-bold is-medium">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">COEX</h1>
-                <h2 class="subtitle">Diseño atractivo con Bulma</h2>
+                <h2 class="subtitle"> ¡Desarrollamos el futuro que imaginas!</h2>
             </div>
         </div>
     </section>
-    <div class="theme-toggle">
-        <button id="dark-theme-btn">Tema Oscuro</button>
-        <button id="light-theme-btn">Tema Claro</button>
-    </div>
     <div class="container content">
-        <h2 class="title">Contenido Principal</h2>
-        <p>
-            Bienvenido a nuestra página web moderna y atractiva. Aquí encontrarás una gran cantidad de contenido interesante y funcionalidades interactivas.
-        </p>
+        <h2 class="titulo">Acerca de Nosotros</h2>
+        <p class="texto"> Somos una empresa de desarrollo de software especializada en ofrecer soluciones
+            a medida para empresas. Nos enfocamos en ofrecer software de alta calidad y fácil de
+            usar, que se adapta a las necesidades específicas de cada cliente. Trabajamos con las últimas
+            tecnologías y metodologías de desarrollo de software para garantizar que nuestros productos sean
+            siempre innovadores y eficientes. </p>
+        <br>
+        <p class="texto">Desarrollo de software a medida: creamos soluciones personalizadas para empresas
+            que buscan mejorar sus procesos y aumentar su eficiencia, a través del desarrollo de
+            aplicaciones a medida le brinda la oportunidad de contar con una solución tecnológica única.</p>
     </div>
     <section class="section">
         <div class="container">
@@ -100,44 +107,57 @@
             <div class="columns">
                 <div class="column">
                     <div class="card">
-                        <h3 class="title is-4">Diseño Responsivo</h3>
-                        <p>El diseño de esta página se adapta a dispositivos de todos los tamaños, desde móviles hasta escritorios.</p>
+                        <h3 class="title is-4">Nuestros Servicios</h3>
+                        <p class="texto"><ul>
+                            <li>Desarrollo de aplicaciones móviles</li>
+                            <li>Consultoría en tecnología</li>
+                            <li>Desarrollo de software para la nube</li>
+                            <li>Desarrollo de software empresarial</li>
+                            <li>Mantenimiento y soporte del software</li>
+                            <li>Integración de sistemas</li>
+                            <li>Entre muchos otros...</li>
+                        </ul></p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <h3 class="title is-4">Contenido Variado</h3>
-                        <p>Ofrecemos una amplia gama de contenido, desde artículos informativos hasta videos y galerías de imágenes.</p>
+                        <h3 class="title is-4"> Comunicación </h3>
+                        <p class="texto">Nos esforzamos por fomentar un diálogo abierto y transparente tanto
+                            con nuestros clientes como dentro de nuestro equipo. Creemos que una comunicación efectiva
+                            es esencial para entender y satisfacer las necesidades de nuestros clientes, así como para
+                            garantizar un flujo constante de información y colaboración entre todas las partes
+                            involucradas.</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <h3 class="title is-4">Interacción Fácil</h3>
-                        <p>Los usuarios pueden interactuar con nuestra página de manera sencilla y disfrutar de una experiencia agradable.</p>
+                        <h3 class="title is-4"> Calidad </h3>
+                        <p class="texto">La calidad es otro valor fundamental que nos impulsa a superar
+                            constantemente las expectativas.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <div class="container content">
-        <h2 class="title">Noticias Recientes</h2>
         <div class="columns">
             <div class="column">
                 <div class="card">
-                    <h3 class="title is-4">Diseño Responsivo</h3>
-                    <p>El diseño de esta página se adapta a dispositivos de todos los tamaños, desde móviles hasta escritorios.</p>
+                    <h3 class="title is-4"> Innovación </h3>
+                    <p class="has-text-centered">La innovación es el motor principal para el progreso. Como empresa
+                        joven de software, nos esforzamos por estar a la vanguardia de las últimas tendencias
+                        tecnológicas y por ofrecerte soluciones innovadoras que impulsen el crecimiento de tu
+                        negocio. Nuestro equipo de profesionales altamente capacitados se mantiene actualizado en
+                        las últimas tecnologías y metodologías de desarrollo de software. </p>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
-                    <h3 class="title is-4">Contenido Variado</h3>
-                    <p>Ofrecemos una amplia gama de contenido, desde artículos informativos hasta videos y galerías de imágenes.</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <h3 class="title is-4">Interacción Fácil</h3>
-                    <p>Los usuarios pueden interactuar con nuestra página de manera sencilla y disfrutar de una experiencia agradable.</p>
+                    <h3 class="title is-4"> Soluciones Accesibles </h3>
+                    <p class="has-text-centered">Sabemos que la tecnología debe estar al alcance de todos,
+                        independientemente del tamaño o presupuesto de la empresa. Nuestra pasión por crear
+                        soluciones accesibles nos impulsa a desarrollar software intuitivo y fácil de usar,
+                        eliminando barreras y facilitando su adopción. </p>
                 </div>
             </div>
         </div>
@@ -187,62 +207,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <script>
-        const darkThemeBtn = document.getElementById('dark-theme-btn');
-        const lightThemeBtn = document.getElementById('light-theme-btn');
-
-        // Función para habilitar el tema oscuro
-        function enableDarkTheme() {
-            document.body.classList.add('dark-theme');
-        }
-
-        // Función para habilitar el tema claro
-        function enableLightTheme() {
-            document.body.classList.remove('dark-theme');
-        }
-
-        darkThemeBtn.addEventListener('click', enableDarkTheme);
-        lightThemeBtn.addEventListener('click', enableLightTheme);
-    </script>
-    
-    
+    </section>    
 </body>
 </html>
-=======
-<html>
-<head>
-    <link rel="stylesheet" href="./carrusel/css/carruselPrin.css">
-    <link rel="stylesheet" href="./css/bulma.min.css"> 
-</head>
-<body>
-    <div class="content">
-        <div class="content-prin">
-            <h1 class="title is-1">COEX Technology</h1>
-            <a href="./es/index.html" class="button is-primary is-rounded">Ingresar</a>
-        </div>
-        <div class="carrusel is-relative">
-            <div class="carrusel-items">
-                <div class="carrusel-item">
-                    <img src="./carrusel/img/clarisa.jpg" alt="">
-                </div>
-                <div class="carrusel-item">
-                    <img src="./carrusel/img/enzo.jpg" alt="">
-                </div>
-                <div class="carrusel-item">
-                    <img src="./carrusel/img/eugenia.jpg" alt="">
-                </div>
-                <div class="carrusel-item">
-                    <img src="./carrusel/img/santiago.jpg" alt="">
-                </div>
-                <div class="carrusel-item">
-                    <img src="./carrusel/img/tadeo.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script src="./js/main.js"></script>
-</body>
-</html>
->>>>>>> 8c2a2e79336298d1508bb98f34eae6671f4aab2f
