@@ -3,6 +3,7 @@ body {
     color: #fff;
     font-family: Arial, sans-serif;
 }
+
 .hero {
     background-image: url('https://via.placeholder.com/1920x1080');
     background-size: cover;
@@ -13,42 +14,51 @@ body {
     justify-content: center;
     text-align: center;
 }
+
 .hero h1 {
     font-size: 4rem;
     font-weight: 700;
 }
+
 .content {
     padding: 3rem;
 }
+
 .section {
     background-color: #2a2a2a;
     padding: 3rem;
     color: #fff;
 }
+
 .container {
     max-width: 1200px;
 }
+
 .cta {
     background-color: #007BFF;
     padding: 2rem;
     text-align: center;
 }
+
 .cta h2 {
     font-size: 2.5rem;
     font-weight: 600;
     color: #fff; /* Cambio de color a blanco */
 }
+
 .card {
     background-color: #333;
     color: #fff;
     border-radius: 5px;
     padding: 2rem;
 }
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
+
 .gallery-item {
     background-image: url('https://via.placeholder.com/300x200');
     background-size: cover;
@@ -57,9 +67,11 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .gallery-item:hover {
     transform: scale(1.1);
 }
+
 .dark-theme {
     background-color: #121212;
     color: #fff;
