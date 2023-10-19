@@ -9,64 +9,86 @@
     <link rel="stylesheet" href="./css/bulma.min.css">
     <link rel="stylesheet" href="./css/index_principal.css">
     <link rel="stylesheet" href="./css/tema_oscuro.css">
+    <link rel="stylesheet" href="./css/video.css">
+  <script src="./js/burger.js"></script>
+
 </head>
 <body class="has-background-light">
     <header class="sticky-header">
-        <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-light" role="navigation" aria-label="dropdown navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="index.html">
-                    <img src="./img/logo.jpg" width="40px" height="40px" class="mr-4">
-                </a>
+        
+              <a role="button" class="navbar-item is-fixed" href="./index.html">
+                <img src="./img/logo.jpg" width="40px" height="100%">
+              </a>
+        
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
             </div>
-            <div class="navbar-brand">
-                <a class="navbar-item is-light" href="./es/index.html">Inicio</a>
-            </div>
+        
+        
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-item is-light" href="./es/valores.html">Valores</a>
-                    </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-item" href="./es/informacion.html">Información</a>
-                    </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-item" href="./es/ubicacion.html">Ubicación</a>
-                    </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">Contactos</a>
-                        <div class="navbar-dropdown">
-                            <a href="https://www.whatsapp.com" class="navbar-item">
-                                <img src="./img/whatsapp.jpg" alt="WhatsApp" width="20px" height="20px">
-                                <span style="margin-left: 10px;">WhatsApp</span>
-                            </a>
-                            <a href="https://www.facebook.com" class="navbar-item">
-                                <img src="./img/facebook.jpg" alt="Facebook" width="20px" height="20px">
-                                <span style="margin-left: 10px;">Facebook</span>
-                            </a>
-                            <a href="https://www.instagram.com" class="navbar-item">
-                                <img src="./img/instagram.jpg" alt="Instagram" width="20px" height="20px">
-                                <span style="margin-left: 10px;">Instagram</span>
-                            </a>
-                        </div>
+        
+                  <div class="navbar-start">
+                    <a class="navbar-item is-light" href="./index.html">Inicio</a>
+                  </div>
+                  <div class="navbar-start">
+                    <a class="navbar-item is-light" href="./es/valores.html">Valores</a>
+                  </div>
+                  <div class="navbar-start">
+                    <a class="navbar-item" href="./es/informacion.html">Información</a>
+                  </div>
+                  <div class="navbar-start">
+                    <a class="navbar-item" href="./es/ubicacion.html">Ubicación</a>
+                  </div>
+                  <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link"> Contactos </a>
+        
+                      <div class="navbar-dropdown">
+        
+                          <a href="tel:43522280" class="navbar-item is-flex justify-content-center">
+        
+                            <img src="./img/whatsapp.jpg" width="20" height="20"> <span style="margin-left: 10px"> </span>
+                            <p class="is-flex justify-content-center menu"> WhatsApp </p> </a>
+        
+        
+                          <a href="https://www.facebook.com/profile.php?id=100081470277547" class="navbar-item is-flex justify-content-center">
+                            <img src="./img/facebook.jpg" width="20" height="20"> <span style="margin-left: 10px;"> </span>
+                            <p class="is-flex justify-content-center menu"> Facebook </p> </a>
+        
+        
+                          <a href="mailto:comunicados.utu@gmail.com" class="navbar-item is-flex justify-content-center">
+                            <img src="./img/instagram.jpg" width="20" height="20"> <span style="margin-left: 10px"> </span>
+                            <p class="is-flex justify-content-center menu"> Instagram </p> </a>
                     </div>
                 </div>
-            </div>
-            <div class="navbar-brand">
-                <a class="navbar-item is-light" href="index_english.html">English</a>
-            </div>
-            <nav class="boton_temas">
+              </div>
+              <div class="navbar-brand">
+                <a class="navbar-item is-light" href="./en/index.html">English</a>
+                </div>
+    
+            <div class="boton_temas">
                 <div class="enlaces">
                     <button class="switch" id="switch">
                         <span><i class="fas fa-moon"></i></span>
                         <span><i class="fas fa-sun"></i></span>
                     </button>
                 </div>
-            </nav>
+            </div>
+            
         </nav>
+        
         <script src="./js/temas.js"></script>
     </header>
 
     <section class="hero is-info is-bold is-medium">
+        <video class="hero-video" autoplay loop muted>
+            <source src="./video/florida_cowork.mp4" type="video/mp4">
+        </video>
         <div class="hero-body">
             <div class="container">
                 <h1 class="title has-text-black">COEX</h1>
@@ -99,7 +121,7 @@
                         <p class="texto has-text"> 
                             <ul>
                             <li class="mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span> Desarrollo de aplicaciones móviles</li>
-                            <li class="mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span> Consultoría en tecnología</li>
+                            <li class="mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span> Consultoría en tecnología </li>
                             <li class="mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span> Desarrollo de software para la nube</li>
                             <li class="mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span> Desarrollo de software empresarial</li>
                             <li class="mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span> Mantenimiento y soporte del software</li>
@@ -112,7 +134,7 @@
                 <div class="column">
                     <div class="card">
                         <h3 class="title is-4 has-text-white">Comunicación</h3>
-                        <p class="has-text-centered">Nos esforzamos por fomentar un diálogo abierto y transparente tanto
+                        <p class="has-text-centered"> Nos esforzamos por fomentar un diálogo abierto y transparente tanto
                             con nuestros clientes como dentro de nuestro equipo. Creemos que una comunicación efectiva
                             es esencial para entender y satisfacer las necesidades de nuestros clientes, así como para
                             garantizar un flujo constante de información y colaboración entre todas las partes
@@ -122,7 +144,7 @@
                 <div class="column">
                     <div class="card">
                         <h3 class="title is-4 has-text-white">Calidad</h3>
-                        <p class="has-text-centered">La calidad es otro valor fundamental que nos impulsa a superar
+                        <p class="has-text-centered"> La calidad es otro valor fundamental que nos impulsa a superar
                             constantemente las expectativas. Nos esforzamos por ofrecer productos y servicios que
                             cumplan con los más altos estándares de excelencia. Nuestro equipo de profesionales
                             altamente calificados se dedica a garantizar que cada línea de código, cada funcionalidad y
@@ -137,7 +159,7 @@
             <div class="column">
                 <div class="card">
                     <h3 class="title is-4 has-text-white">Innovación</h3>
-                    <p class="has-text-centered">La innovación es el motor principal para el progreso. Como empresa
+                    <p class="has-text-centered"> La innovación es el motor principal para el progreso. Como empresa
                         joven de software, nos esforzamos por estar a la vanguardia de las últimas tendencias
                         tecnológicas y por ofrecerte soluciones innovadoras que impulsen el crecimiento de tu
                         negocio. Nuestro equipo de profesionales altamente capacitados se mantiene actualizado en
@@ -147,7 +169,7 @@
             <div class="column">
                 <div class="card">
                     <h3 class="title is-4 has-text-white">Soluciones Accesibles</h3>
-                    <p class="has-text-centered">Sabemos que la tecnología debe estar al alcance de todos,
+                    <p class="has-text-centered"> Sabemos que la tecnología debe estar al alcance de todos,
                         independientemente del tamaño o presupuesto de la empresa. Nuestra pasión por crear
                         soluciones accesibles nos impulsa a desarrollar software intuitivo y fácil de usar,
                         eliminando barreras y facilitando su adopción. </p>
@@ -164,57 +186,19 @@
     </section> -->
     <section class="section">
         <div class="container">
-            <h2 class="title has-text-black">Ubicación de la Empresa</h2>
+            <h2 class="title has-text-white">Ubicación de la Empresa</h2>
             <div class="gallery">
-                <div class="gallery-item">
+                <div>
                     <img src="./img/ImagenCowork1.jpg" alt="Imagen 1">
                 </div>
-                <div class="gallery-item">
+                <div>
                     <img src="./img/ImagenCowork2.jpg" alt="Imagen 2">
                 </div>
-                <div class="gallery-item">
-                    <img src="imagen3.jpg" alt="Imagen 3">
+                <div>
+                    <img src="./img/ImagenCowork3.jpg" alt="Imagen 3">
                 </div>
-                <div class="gallery-item">
-                    <img src="imagen4.jpg" alt="Imagen 4">
-                </div>
-                <div class="gallery-item">
-                    <img src="imagen5.jpg" alt="Imagen 5">
-                </div>
-                <div class="gallery-item">
-                    <img src="imagen6.jpg" alt="Imagen 6">
-                </div>
-                <div class="gallery-item">
-                    <img src="imagen7.jpg" alt="Imagen 7">
-                </div>
-                <div class="gallery-item">
-                    <img src="simagen8.jpg" alt="Imagen 8">
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="section">
-        <div class="container">
-            <h2 class="title has-text-black">Testimonios de Clientes</h2>
-            <div class="columns">
-                <div class="column">
-                    <div class="card">
-                        <p>¡Esta página web es increíble! Encontré toda la información que necesitaba en un solo lugar.</p>
-                        <p><strong>- Cliente Satisfecho 1</strong></p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <p>La navegación en esta página es muy fluida y fácil de usar. ¡Muy recomendable!</p>
-                        <p><strong>- Cliente Satisfecho 2</strong></p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <p>Los recursos disponibles en esta web son de alta calidad. ¡La visito a menudo para estar actualizado!</p>
-                        <p><strong>- Cliente Satisfecho 3</strong></p>
-                    </div>
+                <div>
+                    <img src="./img/ImagenCowork4.jpg" alt="Imagen 4">
                 </div>
             </div>
         </div>

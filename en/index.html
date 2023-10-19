@@ -1,177 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> COEX </title>
+    <title>COEX</title>
 
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="../css/bulma.min.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/index_principal.css">
     <link rel="stylesheet" href="../css/tema_oscuro.css">
+    <link rel="stylesheet" href="../css/video.css">
+  <script src="../js/burger.js"></script>
+
 </head>
-
-<body>
-
+<body class="has-background-light">
     <header class="sticky-header">
-
-        <nav class="navbar is-light" role="navigation" aria-label="main navigation" class="hero is-primary">
-
-            <div class="navbar-brand navegador">
-                <a class="navbar-item " href="../index.html">
-                    <img src="../img/logo.jpg" class="navegador" width="40px" height="40px" class="mr-4">
-                </a>
+        <nav class="navbar is-light" role="navigation" aria-label="dropdown navigation">
+            <div class="navbar-brand">
+        
+              <a role="button" class="navbar-item is-fixed" href="../index.html">
+                <img src="../img/logo.jpg" class= "navegador" width="40px" height="40px" class="mr-4">
+              </a>
+        
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
             </div>
-
-            <div class="navbar-brand navegador">
-                <a class="navbar-item is-light" href="#"> Home </a>
-            </div>
-
+        
+        
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
-
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-item is-light" href="values.html"> Values </a>
-                    </div>
-
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-item" href="information.html"> Information </a>
-                    </div>
-
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-item" href="location.html"> Location </a>
-                    </div>
-
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link"> Contacts </a>
-
-                        <div class="navbar-dropdown">
-                            <a href="https://www.whatsapp.com" class="navbar-item">
-                                <img src="../img/whatsapp.jpg" alt="WhatsApp" width="20px" height="20px">
-                                <span style="margin-left: 10px;"> WhatsApp </span> </a>
-
-                            <a href="https://www.facebook.com" class="navbar-item">
-                                <img src="../img/facebook.jpg" alt="Facebook" width="20px" height="20px">
-                                <span style="margin-left: 10px;"> Facebook </span> </a>
-
-                            <a href="https://www.instagram.com" class="navbar-item">
-                                <img src="../img/instagram.jpg" alt="Instagram" width="20px" height="20px">
-                                <span style="margin-left: 10px;"> Instagram </span> </a>
-
-                        </div>
+        
+                  <div class="navbar-start">
+                    <a class="navbar-item is-light" href="#"> Home </a>
+                  </div>
+                  <div class="navbar-start">
+                    <a class="navbar-item is-light" href="valores.html"> Values </a>
+                  </div>
+                  <div class="navbar-start">
+                    <a class="navbar-item" href="informacion.html"> Information </a>
+                  </div>
+                  <div class="navbar-start">
+                    <a class="navbar-item" href="./es/ubicacion.html"> Location </a>
+                  </div>
+                  <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link"> Contacts </a>
+        
+                      <div class="navbar-dropdown">
+        
+                          <a href="tel:43522280" class="navbar-item is-flex justify-content-center">
+        
+                            <img src="./img/whatsapp.jpg" width="20" height="20"> <span style="margin-left: 10px"> </span>
+                            <p class="is-flex justify-content-center menu"> WhatsApp </p> </a>
+        
+        
+                          <a href="https://www.facebook.com/profile.php?id=100081470277547" class="navbar-item is-flex justify-content-center">
+                            <img src="./img/facebook.jpg" width="20" height="20"> <span style="margin-left: 10px;"> </span>
+                            <p class="is-flex justify-content-center menu"> Facebook </p> </a>
+        
+        
+                          <a href="mailto:comunicados.utu@gmail.com" class="navbar-item is-flex justify-content-center">
+                            <img src="./img/instagram.jpg" width="20" height="20"> <span style="margin-left: 10px"> </span>
+                            <p class="is-flex justify-content-center menu"> Instagram </p> </a>
                     </div>
                 </div>
-
-            </div>
-
-            <div class="navbar-brand navegador">
-                <a class="navbar-item is-light" href="../es/index.html"> Español </a>
-            </div>
-
-            <nav class="boton_temas">
-                
-
+              </div>
+              <div class="navbar-brand">
+                <a class="navbar-item is-light" href="../index.html"> Español </a>
+                </div>
+    
+            <div class="boton_temas">
                 <div class="enlaces">
                     <button class="switch" id="switch">
                         <span><i class="fas fa-moon"></i></span>
                         <span><i class="fas fa-sun"></i></span>
                     </button>
                 </div>
-            </nav>
-
+            </div>
+            
         </nav>
-
-        <script src="../js/temas.js"></script>
-
+        
+        <script src="./js/temas.js"></script>
     </header>
 
-    <main>
-        <div class="container">
-            <h1 class="titulo"> COEX </h1> <br>
-            <p class="subtitulo"> Let's develop the future you imagine! </p> <br>
-        </div>
-    </main>
-
-    <main class="section mt-6">
-        <div class="container mb-5">
-            <div class="columns is-variable is-8">
-
-                <div class="column">
-                    <p id="titulo"><b> About us </b></p>
-                    <br>
-                    <p class="texto"> We are a software development company specialized in offering solutions
-                        tailored for companies. We focus on offering high-quality and easy-to-use software.
-                        Use, which adapts to the specific needs of each client. We work with the latest
-                        technologies and software development methodologies to ensure that our products are
-                        always innovative and efficient. </p>
-                    <br>
-                    <p class="texto"> Custom software development: we create customized solutions for companies
-                        that seek to improve their processes and increase their efficiency, through the development of
-                        custom applications gives you the opportunity to have a unique technological solution. </p>
-                </div>
-
-                <div class="column is-one-third pt-5">
-                    <div class="services-container is-fullwidth bajar_caja">
-                        <h3 class="title is-4 has-text-white"> Our services </h3>
-                        <ul>
-                            <li> Mobile application development </li>
-                            <li> Technology consulting </li>
-                            <li> Cloud software development </li>
-                            <li> Business software development </li>
-                            <li> System integration </li>
-                            <li> Among many others... </li>
-                        </ul>
-                    </div>
-                </div>
-
+    <section class="hero is-info is-bold is-medium">
+        <video class="hero-video" autoplay loop muted>
+            <source src="../video/florida_cowork.mp4" type="video/mp4">
+        </video>
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title has-text-black">COEX</h1>
+                <h2 class="subtitle has-text-black"> Let's develop the future you imagine! </h2>
             </div>
         </div>
-    </main>
-
-    <div>
-        <iframe src="carousel.html" width="85%" height="800vh" sandbox="allow-same-origin allow-scripts" style="display: block; margin: 0 auto;"></iframe>
+    </section>
+    <div class="container content">
+        <h2 class="title has-text-black"> About us </h2>
+        <p class="texto has-text-black"> We are a software development company specialized in offering solutions
+            tailored for companies. We focus on offering high-quality and easy-to-use software.
+            Use, which adapts to the specific needs of each client. We work with the latest
+            technologies and software development methodologies to ensure that our products are
+            always innovative and efficient. </p>
+            <p class="texto"> Custom software development: we create customized solutions for companies
+                that seek to improve their processes and increase their efficiency, through the development of
+                custom applications gives you the opportunity to have a unique technological solution. </p>
+        
     </div>
-
-    <div class="columns mt-5">
+    <div>
+        <iframe src="../en/carousel.html" width="85%" height="800vh" sandbox="allow-same-origin allow-scripts" style="display: block; margin: 0 auto;"></iframe>
+    </div>
+    <section class="section mt-6">
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="column">
-                        <p class="subtitulo mt-6 mb-5"><b> Communication </b></p>
+            <h2 class="title has-text-white">Características Destacadas</h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <h3 class="title is-4 has-text-white">Our services </h3>
+                        <p class="texto has-text"> 
+                            <ul>
+                            <li class="mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span> Mobile application development </li>
+                            <li class="mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span> Technology consulting </li>
+                            <li class="mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span> Cloud software development </li>
+                            <li class="mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span> Business software development </li>
+                            <li class="mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span> System integration </li>
+                            <li class="mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span> Integración de sistemas</li>
+                            <li class="mb-2"><span class="icon has-text-success"><i class="fas fa-check"></i></span> Among many others... </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <h3 class="title is-4 has-text-white"> Communication </h3>
                         <p class="has-text-centered"> We strive to foster an open and transparent dialogue both
                             with our clients as within our team. We believe that effective communication
                             is essential to understand and meet the needs of our customers, as well as to
                             ensure a constant flow of information and collaboration between all parties
-                            involved. </p>
+                            involved.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="columns mt-5">
-        <div class="container imagen">
-            <div class="row">
-                <div class="col">
-                    <div class="column">
-                        <img class="imagen" src="../img/comunicacion.jpg" alt="Imagen 1" width="100%" height="100%">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="columns mt-6">
-        <div class="container mt-6">
-            <div class="row">
-                <div class="col">
-                    <div class="column ">
-                        <p class="subtitulo mt-6 mb-5"><b> Quality </b></p>
+                <div class="column">
+                    <div class="card">
+                        <h3 class="title is-4 has-text-white"> Quality </h3>
                         <p class="has-text-centered"> Quality is another fundamental value that drives us to exceed
                             expectations constantly. We strive to offer products and services that
                             meet the highest standards of excellence. Our team of professionals
@@ -181,79 +153,55 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="columns mt-5">
-        <div class="container imagen">
-            <div class="row">
-                <div class="col">
-                    <div class="column ">
-                        <img class="imagen" src="../img/calidad.jpg" alt="Imagen 1" width="100%" height="100%">
-                    </div>
+    </section>
+    <div class="container content">
+        <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <h3 class="title is-4 has-text-white"> Innovation </h3>
+                    <p class="has-text-centered"> Innovation is the main engine for progress. as a company
+                        young software developer, we strive to be at the forefront of the latest trends
+                        technologies and for offering you innovative solutions that drive the growth of your
+                        business. Our team of highly trained professionals stays up to date on
+                        the latest technologies and software development methodologies. </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3 class="title is-4 has-text-white"> Accessible Solutions </h3>
+                    <p class="has-text-centered"> We know that technology should be available to everyone,
+                        regardless of company size or budget. Our passion to create
+                        accessible solutions drives us to develop software that is intuitive and easy to use,
+                        removing barriers and facilitating its adoption. </p>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-    <div class="columns mt-6">
-        <div class="container mt-6">
-            <div class="row">
-                <div class="col">
-                    <div class="column ">
-                        <p class="subtitulo mt-6 mb-5"><b> Innovation </b></p>
-                        <p class="has-text-centered"> Innovation is the main engine for progress. as a company
-                            young software developer, we strive to be at the forefront of the latest trends
-                            technologies and for offering you innovative solutions that drive the growth of your
-                            business. Our team of highly trained professionals stays up to date on
-                            the latest technologies and software development methodologies. </p>
-                    </div>
+    <section class="cta">
+        <div class="container">
+            <h2 class="title has-text-black"> Join Our Community </h2>
+            <p> Sign up to receive updates and exciting news. </p>
+            <a href="#" class="button is-primary is-large"> Register now </a> 
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title has-text-white"> Location of the company </h2>
+            <div class="gallery">
+                <div>
+                    <img src="../img/ImagenCowork1.jpg" alt="Imagen 1">
+                </div>
+                <div>
+                    <img src="../img/ImagenCowork2.jpg" alt="Imagen 2">
+                </div>
+                <div>
+                    <img src="../img/ImagenCowork3.jpg" alt="Imagen 3">
+                </div>
+                <div>
+                    <img src="../img/ImagenCowork4.jpg" alt="Imagen 4">
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="columns mt-5">
-        <div class="container imagen">
-            <div class="row">
-                <div class="col">
-                    <div class="column">
-                        <img class="imagen" src="../img/innovacion.jpg" alt="Imagen 1" width="100%" height="100%">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="columns mt-6">
-        <div class="container mt-6">
-            <div class="row">
-                <div class="col">
-                    <div class="column ">
-                        <p class="subtitulo mt-6 mb-5"><b> Accessible Solutions </b></p>
-                        <p class="has-text-centered"> We know that technology should be available to everyone,
-                            regardless of company size or budget. Our passion to create
-                            accessible solutions drives us to develop software that is intuitive and easy to use,
-                            removing barriers and facilitating its adoption. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="columns mt-5">
-        <div class="container imagen">
-            <div class="row">
-                <div class="col">
-                    <div class="column">
-                        <img class="imagen" src="../img/soluciones.jpg" alt="Imagen 1" width="100%" height="100%">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    </section>
 </body>
-
 </html>
