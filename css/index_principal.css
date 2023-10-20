@@ -76,3 +76,14 @@ body {
     background-color: #121212;
     color: #fff;
 }
+
+.titulo {
+    font-size: 13vh !important;
+}
+
+.subtitulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 4vh !important;
+}

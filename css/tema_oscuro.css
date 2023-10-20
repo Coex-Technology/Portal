@@ -44,15 +44,20 @@
   body.dark p {
     color: #FEFEFE;
   } 
-  body.dark h1 {
-    color: #d4d1d1;
-  }
   body.dark .services-container{
     background-color: #b9b7b7;
     box-shadow: 0 0 45px #9ea1a1;
   }
   body.dark .has-text-white, body.dark li{
     color: #000 !important;
+  }
+
+  /* Nuevo estilo */
+  body.dark a, body.dark a:active {
+    color: #FEFEFE !important;
+  }
+  body.dark .navbar-menu{
+    background-color: #222222 !important;
   }
 
 
