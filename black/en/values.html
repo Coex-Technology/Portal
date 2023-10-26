@@ -34,15 +34,15 @@
                 <div class="navbar-start">
 
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-item is-light" href="values.html"> Values </a>
+                        <a class="navbar-item is-light has-text-white" href="values.html"> Values </a>
                     </div>
 
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-item" href="information.html"> Information </a>
+                        <a class="navbar-item has-text-white" href="information.html"> Information </a>
                     </div>
 
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-item" href="location.html"> Location </a>
+                        <a class="navbar-item has-text-white" href="location.html"> Location </a>
                     </div>
 
                     <div class="navbar-item has-dropdown is-hoverable">
@@ -81,6 +81,13 @@
                     </button>
                 </div>
             </nav>
+            <script>
+                var button = document.getElementById("switch");
+            
+                button.addEventListener("click", function() {
+                    window.location.href = "../../portal/en/valores.html";
+                });
+            </script>
 
         </nav>
 

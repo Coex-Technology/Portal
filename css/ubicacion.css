@@ -6,6 +6,7 @@ html, body{
     display: flex;
     justify-content: center;
     margin-top: 5vh;
+    padding-bottom: 10vh;
 }
 
 .fixed-button {
